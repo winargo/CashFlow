@@ -6,10 +6,47 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="cash.indonesia.optima.prima.cashflow.MainMenu">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:id="@+id/balanceleft"
 
+    android:layout_height="55sp">
+
+    <TextView
+        android:layout_width="0sp"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_weight="1"
+        android:backgroundTint="@color/colorPrimary"
+        android:drawableLeft="@drawable/cashresized"
+        android:gravity="center"
+        android:paddingLeft="20px"
+        android:text="Balance  (March) "
+        android:textColor="@color/colorPrimary"
+        android:textSize="8pt" />
+    <TextView
+        android:layout_width="0sp"
+        android:layout_weight="1"
+        android:text="Rp 5,000,000"
+        android:backgroundTint="@color/colorPrimary"
+        android:paddingLeft="20px"
+        android:textSize="10pt"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_height="match_parent" />
+</LinearLayout>
+    <View
+        android:id="@+id/linepg1"
+        android:layout_below="@id/balanceleft"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorPrimary"></View>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@id/linepg1"
+        android:animateLayoutChanges="true"
         android:id="@+id/rlmainmenu"
         android:layout_above="@id/navigation"></RelativeLayout>
 
